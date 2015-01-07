@@ -1,6 +1,8 @@
 <?php
 
-	//code template used to generate objects
+	<!-- LECTURE 1 -->
+
+	//Example 1
 	class dodgers{
 		//class body
 		//class body
@@ -19,7 +21,7 @@
 
 
 
-	//generates instance of class
+	//Example 2
 	$dodgers1 = new dodgers();
 	$dodgers2 = new dodgers();
 
@@ -32,7 +34,7 @@
 
 
 
-	//properties that store data that may vary from object to object
+	//Example 3
 	class dodgers {
 		public $puig = "Yasiel";
 		public $gordon = "Dee";
@@ -57,7 +59,7 @@
 
 
 
-	//access property variables
+	//Example 4
 	print $dodgers1->puig;
 	print $mariners1->seager;
 	print $seahawks1->sherman;
@@ -65,7 +67,7 @@
 
 
 
-	//methods have objects perform tasks
+	//Example 5
 	public function myMethod( $argument, $another) {
 		// stuff
 	}
@@ -79,7 +81,7 @@
 
 
 
-	//$this allows a class to refer to an object instance
+	//Example 6
 	class dodgers {
 		public $puig = "Yasiel";
 		public $gordon = "Dee";
@@ -140,4 +142,69 @@
 	print "The player’s name is {$dodgers1->getName()}.";
 	
 	//The player's name is whats up.
+
+	--------------------------------------------------------------------------------
+	<!-- LECTURE 2 -->
+
+	//Example 1
+
+	class Cat {
+		public $firstName;
+		public $lastName;
+		public $breed;
+
+		function __construct($title, $firstName, $lastName, $breed) {
+			$this->firstName = $firstName;
+			$this->lastName = $lastName;
+			$this->breed = $breed;
+		}
+
+		function getName() {
+			return "{$this->firstName}" . "{$this->lastName}";
+		}
+	}
+
+	class Turtle {
+		public $firstName;
+		public $lastName;
+		public $type;
+
+		function __construct($title, $firstName, $lastName, $breed) {
+			$this->firstName = $firstName;
+			$this->lastName = $lastName;
+			$this->type = $type;
+		}
+
+		function getName() {
+			return "{$this->firstName}" . "{$this->lastName}";
+		}
+	}
+
+	class Teacher {
+		public $firstName;
+		public $lastName;
+		public $class;
+
+		function __construct($title, $firstName, $lastName, $class) {
+			$this->firstName = $firstName;
+			$this->lastName = $lastName;
+			$this->class = $class;
+		}
+
+		function getName() {
+			return "{$this->firstName}" . "{$this->lastName}";
+		}
+	}
+
+
+	//Example 2
+
+	$cat1 = new Cat("AT", "Fizzle", "Tammy");
+	print "Cat 1: {$cat1->getName()}";
+
+	$turtle1 = new Turtle("at", "fizzle", "old");
+	print "Turtle 1: {$turtle1->getName()}";
+
+	$teacher1 = new Teacher("Dan", "Iwao", "APP");
+	print "Teacher 1: {$teacher1->getName()}";
 ?>
