@@ -38,4 +38,6 @@
 	var_dump(is_array("yay"));
 	var_dump(is_array(true));
 	var_dump(is_array(123));
+
+	//this determines whether the value is an array, bool, string, etc.
 ?>
