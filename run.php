@@ -2,23 +2,24 @@
 	
 	//LECTURE 3
 
-	//if(is_double(3.2)){
-		//echo "It is a number with a decimal";
-	//}
-	//else{
-		//echo "It is not a number with a decimal";
-	//}
-
-	//var_dump(is_double("XYZ"));
-	//var_dump(is_double(8008));
-	//var_dump(is_double(123));
-	//var_dump(is_double(false));
-
-	if(is_bool(true)){
-		echo "it is a bool <br>";
+	if(is_null(3.2)){
+		echo "It is a null ";
 	}
 	else{
-		echo "it isn't a bool <br>";
+		echo "It is not a null ";
+	}
+
+	var_dump(is_null("XYZ"));
+	var_dump(is_null(true));
+	var_dump(is_null(0));
+	var_dump(is_null(false));
+
+
+	if(is_bool(true)){
+		echo "<br> it is a bool ";
+	}
+	else{
+		echo "<br> it isn't a bool ";
 	}
 
 	var_dump(is_bool(32));
@@ -28,10 +29,10 @@
 
 
 	if(is_array(32)){
-		echo "it is an array <br>";
+		echo "<br> it is an array ";
 	}
 	else{
-		echo "<br> it isn't an array <br>";
+		echo "<br> it isn't an array ";
 	}
 
 	var_dump(is_array(32));
